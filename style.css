@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+/* =============
+Typography
+============= */
+
+h1,
+h2 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro-text-title,
+.intro-text-parag,
+.title-main-bottom,
+button {
+    color: #fff;
+}
+
+.intro-text-title {
+    letter-spacing: -0.67px;
+}
+
+.footer-item-link {
+    color: #2D2641;
+}
+
+.footer-title-subcontainer {
+    color: #837D88;
+}
+
+.footer-item-link:hover,
+.footer-item-link:active {
+    text-decoration: underline;
+}
+
+/* images */
+
+.header-bottom-img,
+.intro-text,
+.dropdown-content,
+footer {
+    background-repeat: no-repeat;
+}
+
+.intro-text {
+    background-image: url(images/bg-pattern-intro-left-mobile.svg), url(images/bg-pattern-intro-right-mobile.svg);
+    background-position: left top, right 203%;
+    min-height: 500px;
+}
+
+.header-bottom-img {
+    background-image: url(images/image-intro-mobile.jpg);
+    min-height: 451px;
+    background-size: cover;
+}
+
+/* buttons */
+
+button {
+    letter-spacing: 1.5px;
+    padding: 0.5em 1em;
+    border: #fff solid 1.5px;
+    cursor: pointer;
+}
+
+button,
+a {
+    font-weight: 700;
+}
+
+/* nav */
+
+.logo {
+    margin-left: 1em;
+}
+
+.logo,
+.dropdown-nav {
+    align-self: center;
+}
+
+.dropdown-nav {
+    max-width: 32px;
+    justify-self: end;
+    margin-right: 1em;
+}
+
+.dropdown-nav,
+.dropdown-content a {
+    letter-spacing: 1.36px;
+}
+
+.dropdown-nav:hover .dropdown-btn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    max-width: 375px;
+    height: 0;
+    background-color: #2C2830;
+    background-image: url(images/bg-pattern-mobile-nav.svg);
+    background-position: bottom;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all .5s ease-in;
+}
+
+.dropdown-content a {
+    display: block;
+    margin: 1.2em 0;
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    border: 1.5px solid #fff;
+}
+
+.dropdown-nav:hover .dropdown-content {
+    height: 500px;
+}
+
+/* =============
+Layout
+============= */
+
+footer {
+    background-color: #FAFAFA;
+    background-image: url(images/bg-pattern-footer-mobile.svg);
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 1.5em 0;
+}
+
+.header-bottom,
+.main-bottom-div,
+button {
+    background-color: #2D2641;
+}
+
+.main-bottom-div {
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+/* =============
+Media Query
+============= */
