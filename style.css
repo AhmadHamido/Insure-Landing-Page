@@ -76,7 +76,11 @@ footer {
 .header-bottom-img {
     background-image: url(images/image-intro-mobile.jpg);
     min-height: 451px;
-    background-size: cover;
+}
+
+.header-bottom-img,
+.dropdown-content {
+    background-size: contain;
 }
 
 /* buttons */
@@ -123,7 +127,7 @@ a {
     width: 100%;
     position: absolute;
     left: 0;
-    max-width: 375px;
+    max-width: 599px;
     height: 0;
     background-color: #2C2830;
     background-image: url(images/bg-pattern-mobile-nav.svg);
